@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{741219B8-7164-4A0D-81A9-6129B4C423A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProiectFinal</RootNamespace>
+    <AssemblyName>ProiectFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="antreprenor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="antreprenor.Designer.cs">
+      <DependentUpon>antreprenor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bancnotetest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bancnotetest.Designer.cs">
+      <DependentUpon>Bancnotetest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dobanda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dobanda.Designer.cs">
+      <DependentUpon>Dobanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lucru.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lucru.Designer.cs">
+      <DependentUpon>Lucru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personalitati_Si_Bancnote.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Personalitati_Si_Bancnote.Designer.cs">
+      <DependentUpon>Personalitati_Si_Bancnote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schimbvalutar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Schimbvalutar.Designer.cs">
+      <DependentUpon>Schimbvalutar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sfaturi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sfaturi.Designer.cs">
+      <DependentUpon>Sfaturi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="antreprenor.resx">
+      <DependentUpon>antreprenor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bancnotetest.resx">
+      <DependentUpon>Bancnotetest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dobanda.resx">
+      <DependentUpon>Dobanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lucru.resx">
+      <DependentUpon>Lucru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personalitati_Si_Bancnote.resx">
+      <DependentUpon>Personalitati_Si_Bancnote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Schimbvalutar.resx">
+      <DependentUpon>Schimbvalutar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sfaturi.resx">
+      <DependentUpon>Sfaturi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-small-01-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15c2beb49d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equals_PNG30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5lei.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\se-schimba-banii-de-la-1-ianuarie-bnr-modifica-bancnotele-si-monedele-cum-vor-arata-498547.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\arrow-png-icon-1.jpg" />
+    <None Include="Resources\arrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ProiectFinal_-_Copy\ProiectFinal\ProiectFinal.csproj">
+      <Project>{b774bdeb-d64c-4d24-9f4b-2c734ba65ac1}</Project>
+      <Name>ProiectFinal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProiectFinal_-_Copy\ProiectV3\ProiectV3.csproj">
+      <Project>{85153711-7c29-43d8-a604-d41bcc6a4dd6}</Project>
+      <Name>ProiectV3</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
